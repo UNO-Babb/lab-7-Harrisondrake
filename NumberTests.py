@@ -19,6 +19,8 @@ def getFactors(num):
 
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
+  if p <= 1:
+    return False
   if p == 2:
     return True
   if isEven(p):
